@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 97%, 61%);
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+body {
+    background: ;
+}
+#header {
+    background-image: url(../images/desktop/image-header.jpg);
+    height: 700px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#header .flex {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 30%;
+}
+#header .logo {
+    margin-left: -5%;
+}
+#header .logo img {
+    height: 30px;
+}
+#header nav ul {
+    display: flex;
+    gap: 20%;
+    list-style: none;
+}
+#header nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+#header .head h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 80px;
+    color: var(--White);
+    letter-spacing: 10px;
+}
+#header .head img {
+    margin-left: 50%;
+    margin-top: 10%;
+}
