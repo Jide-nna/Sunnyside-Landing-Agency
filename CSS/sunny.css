@@ -16,19 +16,21 @@
     --White: hsl(0, 0%, 100%);
 }
 body {
-    background: ;
+    font-size: 18px;
 }
 #header {
     background-image: url(../images/desktop/image-header.jpg);
-    height: 700px;
+    height: 750px;
     background-size: 100%;
     background-repeat: no-repeat;
+    padding: 10px;
 }
 #header .flex {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     gap: 30%;
+    margin-top: 25px;
 }
 #header .logo {
     margin-left: -5%;
@@ -44,15 +46,117 @@ body {
 #header nav ul li a {
     text-decoration: none;
     font-size: 20px;
+    color: var(--White);
+}
+#header nav ul li button {
+    background: var(--White);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    width: 130%;
+    margin-top: -15px;
+}
+#header nav li button a {
+    color: black;
 }
 #header .head h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     margin-top: 80px;
     color: var(--White);
     letter-spacing: 10px;
 }
 #header .head img {
-    margin-left: 50%;
-    margin-top: 10%;
+    margin-left: 49%;
+    margin-top: 8%;
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#grid .boxes {
+    width: 50%;
+    margin-left: 60px;
+    text-align:start
+}
+#grid .boxes h2 {
+    font-size: 40px;
+    margin-top: 60px;
+}
+#grid .boxes p {
+    margin-top: 30px;
+    font-size: 14.5px;
+}
+#grid .boxes button {
+    margin-top: 20px;
+    border: none;
+    background: white;
+    text-decoration: underline 2px gold;
+    text-transform: uppercase;
+}
+#grid .egg {
+    background: url(../images/desktop/image-transform.jpg);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#grid .cup {
+    background: url(../images/desktop/image-stand-out.jpg);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#grid .words {
+    width: 50%;
+    margin-left: 60px;
+    text-align:start
+}
+#grid .words h1 {
+    font-size: 30px;
+    margin-top: 60px;
+}
+#grid .words p {
+    margin-top: 30px;
+    font-size: 14.5px;
+}
+#grid .words button {
+    margin-top: 20px;
+    border: none;
+    background: white;
+    text-decoration: underline 2px gold;
+    text-transform: uppercase;
+}
+#grid .grape {
+    background: url(../images/desktop/image-graphic-design.jpg);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+#grid .grape h1 {
+    font-size: 30px;
+    margin-top: 350px;
+}
+#grid .grape p {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 60%;
+    margin-left: 150px;
+}
+#grid .photography {
+    background: url(../images/desktop/image-photography.jpg);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+#grid .photography h1 {
+    font-size: 30px;
+    margin-top: 350px;
+}
+#grid .photography p {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 60%;
+    margin-left: 150px;
 }
