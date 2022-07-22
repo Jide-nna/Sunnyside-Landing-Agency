@@ -35,23 +35,26 @@ body {
     gap: 25%;
     margin-top: 25px;
 }
-#header .logo {
-    margin-left: -15%;
-}
 #header .logo img {
     height: 30px;
 }
-#header nav ul {
+#header .nav ul {
     display: flex;
     gap: 20%;
     list-style: none;
 }
-#header nav ul li a {
+#header .nav ul li a {
     text-decoration: none;
     font-size: 20px;
     color: var(--White);
 }
-#header nav ul li button {
+#header .nav ul li a:hover {
+    font-size: 25px;
+}
+#header .nav ul li a:active {
+    color: var(--Dark-blue);
+}
+#header .nav ul li button {
     background: var(--White);
     border: none;
     padding: 15px;
@@ -59,8 +62,50 @@ body {
     width: 130%;
     margin-top: -15px;
 }
-#header nav li button a {
+#header .nav ul li button:hover {
+    background: rgb(85, 158, 253)
+}
+#header .nav ul li button:active {
+    background: rgb(85, 158, 253)
+}
+#header .nav li button a {
     color: black;
+}
+#header .nav ul li button a:hover {
+    color: var(--White);
+}
+#header .nav ul li button a:active {
+    color: var(--White);
+}
+
+/* HAMBURGER MENU*/
+ .menu_hidden {
+    visibility: hidden;
+    position: absolute;
+    background: black;
+    width: 80%;
+    height: 400px;
+    top: 80px;
+    left: auto;
+    right: auto;
+    text-align: center;
+    padding: 10px;
+}
+.menu_hidden nav ul {
+    flex-direction: column;
+    gap: 40px;
+}
+.menu_hidden nav ul li a {
+    color: var(--Dark-blue);
+    margin-top: 50px;
+}
+.menu_hidden nav ul li button {
+    background: var(--Yellow);
+    width: 30%;
+}
+.hamburger {
+    visibility: hidden;
+    height: 30px;
 }
 #header .head h1 {
     text-align: center;
@@ -68,7 +113,8 @@ body {
     margin-top: 80px;
     color: var(--White);
     letter-spacing: 10px;
-    font-family: 'Fraunces', serif
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
 }
 #header .head img {
     margin-left: 49%;
@@ -102,6 +148,17 @@ body {
     background: white;
     border-bottom: 2px solid gold;
     text-transform: uppercase;
+    color: var(--Very-dark-desaturated-blue);
+}
+#grid .boxes button a {
+    color: var(--Very-dark-desaturated-blue);
+    text-decoration: none;
+}
+#grid .boxes button:hover {
+    border-bottom: 5px solid gold;
+}
+#grid .boxes button:active {
+    border-bottom: 5px solid gold;
     color: var(--Very-dark-desaturated-blue);
 }
 #grid .egg {
@@ -141,6 +198,17 @@ body {
     background: white;
     border-bottom: 2px solid pink;
     text-transform: uppercase;
+}
+#grid .words button a {
+    color: var(--Very-dark-desaturated-blue);
+    text-decoration: none;
+}
+#grid .words button:hover {
+    border-bottom: 5px solid pink;
+}
+#grid .words button:active {
+    border-bottom: 5px solid pink;
+    color: var(--Very-dark-desaturated-blue);
 }
 #grid .grape {
     background: url(../images/desktop/image-graphic-design.jpg);
@@ -223,18 +291,103 @@ body {
     opacity: 80%;
 }
 #images {
-    display: flex;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 #images .image1 {
     background: url(../images/desktop/image-gallery-milkbottles.jpg);
-    width: 40%;
+    height: 420px;
+    width: 100%;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 100%;
 }
 #images .image2 {
     background: url(../images/desktop/image-gallery-orange.jpg);
-    height: 400;
-    width: 305%;
+    height: 420px;
+    width: 100%;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 100%;
+}
+#images .image3 {
+    background: url(../images/desktop/image-gallery-cone.jpg);
+    height: 420px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#images .image4 {
+    background: url(../images/desktop/image-gallery-sugarcubes.jpg);
+    height: 420px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+footer {
+    background: var(--Dark-moderate-cyan);
+    text-align: center;
+    height: 300px;
+}
+footer .footer_logo img{
+    margin-top: 70px;
+    filter: brightness(1) invert(1);
+    opacity: 60%;
+    height: 35px;
+}
+footer .links nav ul{
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+    margin-left: 37%;
+    list-style: none;
+}
+footer .links nav li a {
+    text-decoration: none;
+    font-size: 25px;
+    opacity: 60%;
+    color: var(--Very-dark-desaturated-blue);
+}
+footer .links nav li a:hover {
+    color: var(--White);
+    opacity: 100%;
+    cursor: pointer;
+}
+footer .contact {
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+    margin-left: 43%;
+}
+footer .contact a {
+    filter: brightness(0) invert(0);
+    opacity: 60%;
+}
+footer .contact a:hover {
+    filter: brightness(0) invert(1);
+    opacity: 100%;
+}
+@media only screen and (max-width:600px) {
+    #header {
+        background-image: url(../images/mobile/image-header.jpg);
+        height: 750px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 10px;
+    }
+    .menu_hidden {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+        visibility: visible;
+    }
+    .nav {
+        visibility: hidden;
+    }
+    #header .head img {
+        margin-top: 125px;
+    }
+    #grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
