@@ -32,29 +32,30 @@ body {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    gap: 25%;
+    gap: 15%;
     margin-top: 25px;
 }
 #header .logo img {
     height: 30px;
+    margin-left: -100%;
 }
-#header .nav ul {
+#header .navbar ul {
     display: flex;
     gap: 20%;
     list-style: none;
 }
-#header .nav ul li a {
+#header .navbar ul li a {
     text-decoration: none;
     font-size: 20px;
     color: var(--White);
 }
-#header .nav ul li a:hover {
+#header .navbar ul li a:hover {
     font-size: 25px;
 }
-#header .nav ul li a:active {
+#header .navbar ul li a:active {
     color: var(--Dark-blue);
 }
-#header .nav ul li button {
+#header .navbar ul li button {
     background: var(--White);
     border: none;
     padding: 15px;
@@ -62,19 +63,19 @@ body {
     width: 130%;
     margin-top: -15px;
 }
-#header .nav ul li button:hover {
-    background: rgb(85, 158, 253)
+#header .navbar ul li button:hover {
+    background: rgb(85, 158, 253);
 }
-#header .nav ul li button:active {
-    background: rgb(85, 158, 253)
+#header .navbar ul li button:active {
+    background: rgb(85, 158, 253);
 }
-#header .nav li button a {
+#header .navbar li button a {
     color: black;
 }
-#header .nav ul li button a:hover {
+#header .navbar ul li button a:hover {
     color: var(--White);
 }
-#header .nav ul li button a:active {
+#header .navbar ul li button a:active {
     color: var(--White);
 }
 
@@ -98,13 +99,14 @@ body {
 .menu_hidden nav ul li a {
     color: var(--Dark-blue);
     margin-top: 50px;
+    transition: 0.5s ease;
 }
 .menu_hidden nav ul li button {
     background: var(--Yellow);
     width: 30%;
 }
 .hamburger {
-    visibility: hidden;
+    display: none;
     height: 30px;
 }
 #header .head h1 {
@@ -125,10 +127,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 #grid .boxes {
-    width: 50%;
-    margin-left: 120px;
-    text-align:start;
-    margin-top: 70px;
+    width: 60%;
+    padding-left: 100px;
+    padding-top: 70px;
+    text-align: start;
 }
 #grid .boxes h2 {
     font-size: 40px;
@@ -138,7 +140,7 @@ body {
 }
 #grid .boxes p {
     margin-top: 30px;
-    font-size: 14.5px;
+    font-size: 14.6px;
     opacity: 80%;
     font-family: 'Barlow', sans-serif;
 }
@@ -175,9 +177,9 @@ body {
 }
 #grid .words {
     width: 50%;
-    margin-left: 120px;
+    padding-left: 100px;
+    padding-top: 70px;
     text-align:start;
-    margin-top: 70px;
 }
 #grid .words h1 {
     font-size: 30px;
@@ -352,11 +354,18 @@ footer .links nav li a:hover {
     opacity: 100%;
     cursor: pointer;
 }
+footer .links nav ul{
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+    margin-left: 37%;
+    list-style: none;
+}
 footer .contact {
     display: flex;
-    gap: 30px;
-    margin-top: 70px;
-    margin-left: 43%;
+    gap: 40px;
+    margin-top: 60px;
+    margin-left: 42.5%;
 }
 footer .contact a {
     filter: brightness(0) invert(0);
@@ -367,6 +376,11 @@ footer .contact a:hover {
     opacity: 100%;
 }
 @media only screen and (max-width:600px) {
+    html,body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     #header {
         background-image: url(../images/mobile/image-header.jpg);
         height: 750px;
@@ -374,20 +388,173 @@ footer .contact a:hover {
         background-repeat: no-repeat;
         padding: 10px;
     }
+    #header .flex {
+        gap: 0;
+    }
     .menu_hidden {
         display: block;
+        transition: 0.3s;
     }
     .hamburger {
         display: block;
         visibility: visible;
+        height: 20px;
     }
-    .nav {
-        visibility: hidden;
+    .navbar {
+        display: none;
     }
     #header .head img {
-        margin-top: 125px;
+        margin-top: 160px;
+        margin-left: 45%;
+        height: 200px;
     }
     #grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr;
     }
+    #grid .egg:nth-last-of-type(5){
+        grid-row: 2 / 1;
+    }
+    #grid .cup:nth-last-of-type(4){
+        grid-row: 4 / 3 ;
+    }
+    #grid .boxes {
+        width: 100%;
+        height: 500px;
+        margin-top: 0;
+        padding: 10px;
+        text-align: center;
+    }
+    #grid .boxes h2 {
+        font-size: 60px;
+    }
+    #grid .boxes p {
+        margin-top: 30px;
+        font-size: 30px;
+        opacity: 80%;
+    }
+    #grid .boxes button a {
+        font-size: 30px;
+    }
+    #grid .egg {
+        background: url(../images/mobile/image-transform.jpg);
+        height: 500px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    #grid .cup {
+        background: url(../images/mobile/image-stand-out.jpg);
+        height: 500px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    #grid .words {
+        width: 100%;
+        height: 620px;
+        margin-top: 0;
+        padding: 10px;
+        text-align: center;
+    }
+    #grid .words h1 {
+        font-size: 65px;
+    }
+    #grid .words p {
+        margin-top: 30px;
+        font-size: 40px;
+        opacity: 80%;
+    }
+    #grid .words button a {
+        font-size: 30px;
+    }
+    #grid .grape {
+        background: url(../images/mobile/image-graphic-design.jpg);
+        height: 800px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    #grid .grape h1 {
+        margin-top: 90%;
+        margin-left: 0;
+        font-size: 50px;
+    }
+    #grid .grape p {
+        margin-left: 0;
+        font-size: 25px;
+        width: 100%;
+    }
+    #grid .photography {
+        background: url(../images/mobile/image-photography.jpg);
+        height: 800px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    #grid .photography h1 {
+        margin-top: 90%;
+        margin-left: 0;
+        font-size: 50px;
+    }
+    #grid .photography p {
+        margin-left: 0;
+        font-size: 25px;
+        width: 100%;
+    }
+    #testimonials h2 {
+        font-size: 35px;
+    }
+    .test {
+        flex-direction: column;
+    }
+    .test .box {
+        width: 100%;
+        margin-left: 5px
+    }
+    .test .box img {
+        width: 20%;
+        margin-top: 10px;
+    }
+    .test .box p {
+        font-size: 30px;
+    }
+    .test .box h3 {
+        font-size: 40px;
+    }
+    .test .box h4 {
+        font-size: 30px;
+    }
+    #images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #images .image1 {
+        background: url(../images/mobile/image-gallery-milkbottles.jpg);
+        height: 300px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    } 
+    #images .image2 {
+        background: url(../images/mobile/image-gallery-orange.jpg);
+        height: 300px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    } 
+    #images .image3 {
+    background: url(../images/mobile/image-gallery-cone.jpg);
+    height: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    } 
+    #images .image4 {
+    background: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+    height: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+   } 
+   footer .footer_logo img{
+    margin-top: 70px;
+    margin-left: -25px;
+}
+footer .links nav ul{
+    margin-left: 20%;
+}
+footer .contact {
+    margin-left: 32.5%;
+}
 }

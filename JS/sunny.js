@@ -2,8 +2,9 @@
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu_hidden')
 //const body = document.body
-hamburger.addEventListener('click', function() {
-    menu.classList.toggle('hidden');
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    menu.classList.toggle('active');
 });
  /* if (menu.classList.contains('hidden')) {
     body.addEventListener('click', function() {
