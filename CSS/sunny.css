@@ -33,7 +33,7 @@ body {
     justify-content: space-evenly;
     width: 100%;
     gap: 15%;
-    margin-top: 25px;
+    padding: 40px;
 }
 #header .logo img {
     height: 30px;
@@ -374,6 +374,125 @@ footer .contact a {
 footer .contact a:hover {
     filter: brightness(0) invert(1);
     opacity: 100%;
+}
+@media only screen and (max-width:1024px) {
+    html,body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    #header .flex {
+        gap: 0%;
+    }
+    #header {
+        height: 550px;
+    }
+    #header .head h1 {
+        margin-top: 20px;
+    }
+    #header .head img {
+        margin-left: 47%;
+        margin-top: 0%;
+        width: 5%;
+    }
+    #grid .boxes {
+        padding-top: 20px;
+    }
+    #grid .boxes h2 {
+        font-size: 30px;
+    }
+    #grid .boxes p {
+        font-size: 14.5px;
+    }
+    #grid .egg {
+        height: 400px;
+    }
+    #grid .words {
+        padding-top: 0px;
+    }
+    #grid .words h1 {
+        font-size: 25px;
+        width: 100%;
+    }
+    #grid .words p {
+        font-size: 14.5px;
+    }
+    #grid .cup {
+        height: 400px;
+    }
+    #grid .grape {
+        height: 430px;
+    }
+    #grid .grape h1 {
+        margin-top: 240px;
+        font-size: 40px;
+    }
+    #grid .grape p {
+        margin-top: 15px;
+        width: 100%;
+        margin-left: 7px;
+        font-size: 25px;
+    }
+    #grid .photography {
+        height: 430px;
+    }
+    #grid .photography h1 {
+        margin-top: 250px;
+        font-size: 40px;
+    }
+    #grid .photography p {
+        margin-top: 15px;
+        width: 100%;
+        margin-left: 7px;
+        font-size: 25px;
+    }
+    #testimonials {
+        margin-top: 70px;
+    }
+    #testimonials .test{
+        margin-left: -90px;
+    }
+    #testimonials .test .box {
+        padding: 5px;
+    }
+    .testimonials .test .box img {
+        width: 60%;
+    }
+    #testimonials .test .box p {
+        font-size: 18px;
+    }
+    #images .image1 {
+        height: 350px;
+        width: 100%;
+        background-size: 100%;
+    }
+    #images .image2 {
+        height: 350px;
+        width: 100%;
+        background-size: 100%;
+    }
+    #images .image3 {
+        height: 350px;
+        width: 100%;
+        background-size: 100%;
+    }
+    #images .image4 {
+        height: 350px;
+        width: 100%;
+        background-size: 100%;
+    }
+    footer {
+        margin-top: -35px;
+    }
+    footer .links nav ul{
+        margin-left: 33%;
+    }
+    footer .contact {
+        margin-left: 40%;
+    }
+}
+@media only screen and (max-width:768px) {
+
 }
 @media only screen and (max-width:600px) {
     html,body {

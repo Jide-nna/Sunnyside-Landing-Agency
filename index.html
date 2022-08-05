@@ -114,6 +114,14 @@
        <a href="9"><img src="./images/icon-pinterest.svg" alt=""> </a>
      </div>
 </footer>
-    <script lang="javaScript"  type="text/javaScript" src="./JS/sunny.js"></script>
+    <script lang="javaScript"  type="text/javaScript" src="./JS/sunn.js">
+        const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu_hidden')
+//const body = document.body
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    menu.classList.toggle('active');
+});
+    </script>
 </body>
 </html>
