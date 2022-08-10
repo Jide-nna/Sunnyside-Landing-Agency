@@ -950,61 +950,73 @@ footer .contact a:hover {
   .mobile-nav button {
     margin-left: 50px;
   }
+  #header .logo {
+    width: 20%;
+    margin-left: 15px;
+  }
   #header {
-    height: 680px;
+    height: 530px;
   }
   #header .head h1 {
-    margin-top: 40px;
-    font-size: 50px;
+    margin-top: 20px;
+    font-size: 30px;
   }
   #header .head img {
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: 45.5%;
     height: 150px;
     width: 7%;
   }
   #grid .egg {
-    height: 395px;
+    height: 335px;
   }
   #grid .cup {
-    height: 395px;
+    height: 335px;
   }
   #grid .boxes {
-    height: 350px;
+    height: 330px;
     padding: 0px;
   }
   #grid .boxes h2 {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 20px;
   }
   #grid .boxes p {
-    font-size: 25px;
+    font-size: 20px;
   }
   #grid .words {
     height: 350px;
     padding: 0px;
   }
   #grid .words h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   #grid .words p {
     margin-top: 30px;
-    font-size: 25px;
+    font-size: 20px;
   }
   #grid .grape {
-    height: 760px;
+    height: 600px;
   }
   #grid .grape h1 {
     margin-top: 110%;
+    font-size: 40px;
+  }
+  #grid .grape p {
+    font-size: 20px;
   }
   #grid .photography {
-    height: 760px;
+    height: 600px;
   }
   #grid .photography h1 {
     margin-top: 110%;
+    font-size: 40px;
+  }
+  #grid .photography p {
+    font-size: 20px;
   }
   #testimonials h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
   #testimonials .test .box p {
     font-size: 20px;
@@ -1012,28 +1024,28 @@ footer .contact a:hover {
     margin-left: 10px;
   }
   #testimonials .test .box h3 {
-    font-size: 40px;
-  }
-  #testimonials .test .box h4 {
     font-size: 30px;
   }
+  #testimonials .test .box h4 {
+    font-size: 20px;
+  }
   #images .image1 {
-    height: 238px;
+    height: 185px;
   }
   #images .image2 {
-    height: 238px;
+    height: 185px;
   }
   #images .image3 {
-    height: 238px;
+    height: 185px;
   }
   #images .image4 {
-    height: 238px;
+    height: 185px;
   }
   footer .links nav ul {
-    margin-left: 15%;
+    margin-left: 5%;
   }
   footer .contact {
-    margin-left: 30%;
+    margin-left: 20%;
   }
 }
 @media only screen and (max-width: 360px) {
